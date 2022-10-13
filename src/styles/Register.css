@@ -1,0 +1,69 @@
+.content-box{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+    padding-left: 200px;
+}
+.form-img{
+    width: 500px;
+}
+.form-box{
+    border: 1px solid;
+    width: 400px;
+    height: 660px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.form-nav{
+    display: flex;
+    padding-left: 50px;
+}
+.arrow-icon{
+    padding-top: 60px;
+}
+.arrow{
+    transform: scale(1.4);
+    color: #707070;
+}
+.winkeat-logo-form{
+    position: relative;
+    bottom: 5px;
+    width: 120px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+input{
+    width: 320px;
+    height: 40px;
+    border-color: #DADADA;
+    border: .2px solid;
+    border-radius: 6px;
+    font-size: 15px;
+    padding-left: 10px;
+    color: #A8A8A8;
+    background-color: #F3F3F3;
+}
+input:focus{
+    outline: none;
+}
+.input-form{
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+.submit-btn{
+    width: 330px;
+    height: 40px;
+    border-radius: 6px;
+    text-align: center;
+    border: #DADADA;
+    background-color: #C0DFFD;
+    margin-left: 33px;
+    color: #A8A8A8;
+    font-size: 15px;
+}
+.form-footer-register{
+    padding-top: 60px;
+    text-align: center;
+}
