@@ -18,16 +18,16 @@ const VendorLogin = () => {
 
   return (
     <>
-      <div className="content-box">
+      <div className="content-box-vendor">
         <div className="logo-box">
           <img
-            className="form-img"
+            className="form-img-vendor"
             src="/images/mini-img3.png"
             alt="not available"
           />
         </div>
-        <div className="form-box-login">
-          <div className="form-nav">
+        <div className="form-box-vendor">
+          <div className="form-nav-vendor">
             <div className="arrow-icon">
               <Link to="/">
                 <ArrowBackIcon className="arrow" />
@@ -35,7 +35,7 @@ const VendorLogin = () => {
             </div>
             <div>
               <img
-                className="winkeat-logo-form"
+                className="winkeat-logo-form-vendor"
                 src="/images/winkeat-logo2.png"
                 alt="not available"
               />
@@ -43,7 +43,7 @@ const VendorLogin = () => {
           </div>
 
           <form action="" onSubmit={submitForm}>
-            <div className="input-form">
+            <div className="input-form-vendor">
               <input
                 type="text"
                 name="phone"
@@ -54,7 +54,7 @@ const VendorLogin = () => {
                 onChange={(e) => setPhone(e.target.value)}
               />
             </div>
-            <div className="input-form">
+            <div className="input-form-vendor">
               <input
                 type="password"
                 name="password"
@@ -65,7 +65,7 @@ const VendorLogin = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <button className="submit-btn" type="submit">
+            <button className="submit-btn-vendor" type="submit">
               Sign In
             </button>
           </form>
