@@ -237,10 +237,12 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  body{
+  #container-landing-page{
     background: url(../../public//images/winkeat-background-mobile-view.png) no-repeat center center fixed;
     background-size: cover;
     background-position: center;
+    width: 100vw;
+    height: 100vh;
   }
   .nav-buttons{
     list-style: none;

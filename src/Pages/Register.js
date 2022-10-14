@@ -21,16 +21,16 @@ const Register = () => {
   };
   return (
     <>
-      <div className="content-box">
-        <div className="logo-box">
+      <div className="content-box-register">
+        <div className="logo-box-register">
           <img
-            className="form-img"
+            className="form-img-register"
             src="/images/mini-img3.png"
             alt="not available"
           />
         </div>
-        <div className="form-box">
-          <div className="form-nav">
+        <div className="form-box-register">
+          <div className="form-nav-register">
             <div className="arrow-icon">
               <Link to="/">
                 <ArrowBackIcon className="arrow" />
@@ -38,7 +38,7 @@ const Register = () => {
             </div>
             <div>
               <img
-                className="winkeat-logo-form"
+                className="winkeat-logo-form-register"
                 src="/images/winkeat-logo2.png"
                 alt="not available"
               />
@@ -46,7 +46,7 @@ const Register = () => {
           </div>
 
           <form action="" onSubmit={submitForm}>
-            <div className="input-form">
+            <div className="input-form-register">
               <input
                 type="text"
                 name="name"
@@ -57,7 +57,7 @@ const Register = () => {
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
-            <div className="input-form">
+            <div className="input-form-register">
               <input
                 type="text"
                 name="email"
@@ -68,7 +68,7 @@ const Register = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className="input-form">
+            <div className="input-form-register">
               <input
                 type="text"
                 name="roll"
@@ -79,7 +79,7 @@ const Register = () => {
                 onChange={(e) => setRoll(e.target.value)}
               />
             </div>
-            <div className="input-form">
+            <div className="input-form-register">
               <input
                 type="password"
                 name="password"
@@ -90,7 +90,7 @@ const Register = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <div className="input-form">
+            <div className="input-form-register">
               <input
                 type="password"
                 name="repassword"
@@ -102,7 +102,7 @@ const Register = () => {
               />
             </div>
             
-            <button className="submit-btn" type="submit">
+            <button className="submit-btn-register" type="submit">
               Sign Up
             </button>
           </form>

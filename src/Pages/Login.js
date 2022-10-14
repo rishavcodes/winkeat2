@@ -16,10 +16,11 @@ const Login = () => {
   };
   return (
     <>
-      <div className="content-box">
+    <div className="login-body">
+      <div className="content-box-login">
         <div className="logo-box">
           <img
-            className="form-img"
+            className="form-img-login"
             src="/images/mini-img3.png"
             alt="not available"
           />
@@ -42,7 +43,7 @@ const Login = () => {
           </div>
 
           <form action="" onSubmit={submitForm}>
-            <div className="input-form">
+            <div className="input-form-login">
               <input
                 type="text"
                 name="roll"
@@ -53,7 +54,7 @@ const Login = () => {
                 onChange={(e) => setRoll(e.target.value)}
               />
             </div>
-            <div className="input-form">
+            <div className="input-form-login">
               <input 
                 type="password"
                 name="password"
@@ -64,11 +65,12 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <button className="submit-btn" type="submit">Sign In</button>
+            <button className="submit-btn-login" type="submit">Sign In</button>
           </form>
 
           <div className="form-footer">
           <div className="footer-top">
+            <span>Are You a <Link>Vendor</Link> ?</span><br/>
             <span><Link>Forgot Your Password?</Link></span><br/>
             <span><Link>Contact Us</Link></span>
           </div>
@@ -78,6 +80,7 @@ const Login = () => {
 
           </div>
         </div>
+      </div>
       </div>
     </>
   );
