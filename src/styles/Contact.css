@@ -1,3 +1,10 @@
+.container-contact{
+    height: 100vh;
+    width: 100vw;
+    background: url(../../public/images/background9.png) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+}
 .form-box-contact {
     width: 650px;
     height: 500px;
@@ -20,8 +27,13 @@
 }
 
 .left-side-contact img{
-    padding-top: 60px;
-    padding-left: 30px;
+    padding-top: 63px;
+    padding-left: 25px;
+}
+
+.right-side-contact h2{
+    text-align: center;
+    padding-top: 30px;
 }
 
 .right-side-contact input {
@@ -30,6 +42,8 @@
     background-color: white;
     font-size: 16px;
     border: none;
+    padding-bottom: 20px;
+    margin-top: 20px;
 }
 
 .submit-btn-contact {
@@ -41,4 +55,95 @@
     margin-top: 40px;
     margin-bottom: 30px;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .form-box-contact {
+        width: 650px;
+        height: 500px;
+        position: absolute;
+        left: 330px;
+        top: 100px;
+        background-color: #FFB800;
+        border-radius: 20px;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .form-box-contact {
+        width: 650px;
+        height: 500px;
+        position: absolute;
+        left: 230px;
+        top: 100px;
+        background-color: #FFB800;
+        border-radius: 20px;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 900px) {
+    .form-box-contact {
+        width: 650px;
+        height: 500px;
+        position: absolute;
+        left: 170px;
+        top: 100px;
+        background-color: #FFB800;
+        border-radius: 20px;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 450px) {
+    .container-contact{
+        width: 100vw;
+        height: 100vh;
+        background-image: url(/public/images/winkeat-background-mobile-view.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .form-box-contact {
+        width: 390px;
+        height: 600px;
+        position: absolute;
+        left: 10px;
+        top: 100px;
+        background-color: #FFB800;
+        border-radius: 20px;
+    }
+    .left-side-contact img{
+        display: none;
+    }
+    .right-side-contact h2{
+        text-align: center;
+        padding: 10px 0 10px 0;
+        font-size: 35px;
+    }
+    .input-hr{
+        margin-bottom: 20px;
+    }
+    .form-and-logo-contact {
+        background: white;
+        width: 100%;
+        height: 567px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .right-side-contact input {
+        width: 340px;
+        height: 40px;
+        background-color: white;
+        font-size: 18px;
+        border: none;
+    }
+    .submit-btn-contact {
+        width: 200px;
+        background-color: white;
+        font-size: 20px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        cursor: pointer;
+        padding-left: 250px;
+    }
+    
 }

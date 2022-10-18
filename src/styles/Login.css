@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.login-body{
+    width: 100vw;
+    height: 100vh;
+    background: url(../../public/images/background9.png) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
 .content-box-login{
     display: flex;
     justify-content: space-evenly;
     width: 1000px;
-    padding-left: 200px;
+    padding-left: 450px;
 }
 .form-img-login{
     width: 500px;
@@ -30,11 +40,12 @@
 .winkeat-logo-form{
     position: relative;
     bottom: 5px;
-    width: 120px;
+    width: 160px;
     padding-left: 60px;
     padding-bottom: 20px;
+    padding-top: 10px;
 }
-input{
+.input-form-login input{
     width: 320px;
     height: 40px;
     border-color: #DADADA;
@@ -49,11 +60,12 @@ input:focus{
     outline: none;
 }
 .input-form-login{
+    width: 380px;
     padding-left: 30px;
     padding-bottom: 20px;
 }
 .submit-btn-login{
-    width: 330px;
+    width: 320px;
     height: 40px;
     border-radius: 6px;
     text-align: center;
@@ -61,7 +73,8 @@ input:focus{
     background-color: #C0DFFD;
     margin-left: 33px;
     color: #A8A8A8;
-    font-size: 15px;
+    font-size: 18px;
+    cursor: pointer;
 }
 .form-footer{
     padding-top: 40px;
@@ -69,11 +82,13 @@ input:focus{
 }
 .footer-top span{
     text-decoration: none;
+    font-weight: 500;
 }
 
 
 .footer-bottom{
     padding-top: 40px;
+    font-weight: 500;
 }
 
 
@@ -97,7 +112,7 @@ input:focus{
 }
 
 @media screen and (max-width: 430px) {
-    body{
+    .login-body{
         background: none;
     }
     .content-box-login{

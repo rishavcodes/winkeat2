@@ -1,0 +1,57 @@
+.canteen-card-body{
+    padding-left: 280px;
+    padding-top: 220px;
+}
+.canteen-card-list{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    position: relative;
+    width: 277.5px;
+    height: 350px;
+    border: .2px solid;
+    border-radius: 21px;
+    text-align: center;
+    cursor: pointer;
+}
+.card:hover{
+    transition: .3s ease-out;
+    background-color: #DADADA;
+    color: #707070;
+}
+.canteen-card-img{
+    width: 275.9px;
+}
+@media only screen and (min-width: 1000px) {
+    .canteen-card-img-mobile{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 450px ){
+    .canteen-card-body{
+        padding-left: 10px;
+        padding-top: 420px;
+    }
+    .canteen-card-list{
+        display: block;
+    }
+    .card{
+        width: 1045px;
+        height: 500px;
+        margin-bottom: 100px;
+        border-radius: 50px;
+        font-size: 50px;
+        background-color: #F2F1F1;
+        color: #707070;
+    }
+    .canteen-card-img{
+        display: none;
+    }
+    .canteen-card-img-mobile{
+        width: 1044px;
+    }
+}

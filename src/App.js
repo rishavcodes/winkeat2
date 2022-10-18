@@ -5,6 +5,9 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import VendorLogin from './Pages/VendorLogin';
 import Contact from './Pages/Contact';
+import HomePage from './Pages/HomePage';
+import User from './Pages/User';
+import Order from './Pages/Order';
 
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/vendorlogin" element={<VendorLogin />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/user" element={<User />} />
+        <Route path="/order" element={<Order />} />
       </Routes>
     </Router>
       

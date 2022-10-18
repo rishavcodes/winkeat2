@@ -21,6 +21,7 @@ const Register = () => {
   };
   return (
     <>
+    <div className="register-body">
       <div className="content-box-register">
         <div className="logo-box-register">
           <img
@@ -111,6 +112,7 @@ const Register = () => {
               Already have an account?<Link to="/login">Sign In</Link>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

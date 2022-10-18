@@ -6,6 +6,7 @@ const LandingPage = () => {
 
   return (
     <>
+    <div>
       <div id="container-landing-page">
         <div className="nav">
           <div className="nav-items">
@@ -40,6 +41,7 @@ const LandingPage = () => {
           <p><Link to="/vendorlogin">Login </Link>as Vendor</p>
           <p>Let's enhance your business <Link to="/contact">Contact Us </Link></p>
         </footer>
+      </div>
       </div>
     </>
   );

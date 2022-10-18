@@ -18,6 +18,7 @@ const VendorLogin = () => {
 
   return (
     <>
+    <div className="vendor-login-page">
       <div className="content-box-vendor">
         <div className="logo-box">
           <img
@@ -82,6 +83,7 @@ const VendorLogin = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
