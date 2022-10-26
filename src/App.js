@@ -8,6 +8,8 @@ import Contact from './Pages/Contact';
 import HomePage from './Pages/HomePage';
 import User from './Pages/User';
 import Order from './Pages/Order';
+import MainCanteen from './Pages/MainCanteen';
+import Cart from './Pages/Cart';
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/user" element={<User />} />
         <Route path="/order" element={<Order />} />
+        <Route path="/maincanteen" element={<MainCanteen />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </Router>
       

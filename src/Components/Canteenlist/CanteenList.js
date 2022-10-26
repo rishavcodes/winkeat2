@@ -1,5 +1,6 @@
 import React from "react";
 import "./Canteenlist.css";
+import { Link } from "react-router-dom";
 
 const CanteenList = () => {
   return (
@@ -19,6 +20,7 @@ const CanteenList = () => {
             />
             <h2 className="canteen-card-title">A Block Canteen</h2>
           </div>
+          <Link style={{textDecoration: 'none'}} to="/maincanteen">
           <div className="card">
             <img
               className="canteen-card-img"
@@ -32,6 +34,7 @@ const CanteenList = () => {
             />
             <h2 className="canteen-card-title">Main Canteen</h2>
           </div>
+          </Link>
           <div className="card">
             <img
               className="canteen-card-img"

@@ -15,6 +15,7 @@
     border-radius: 21px;
     text-align: center;
     cursor: pointer;
+    color: black;
 }
 .card:hover{
     transition: .3s ease-out;

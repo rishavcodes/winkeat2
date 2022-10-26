@@ -1,0 +1,61 @@
+.maincanteen-container{
+    width: 100vw;
+}
+.maincanteen-navbar{
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.arrowback-maincanteen{
+    padding-top: 20px;
+    margin-left: 150px;
+    color: #707070;
+}
+.title-maincateen{
+    padding-top: 18px;
+    position: absolute;
+    left: 300px;
+    font-size: 20px;
+    color: #707070;
+    font-family: 'Poppins';
+}
+.canteen-body-header{
+    padding-top: 60px;
+    padding-left: 180px;
+    display: flex;
+}
+.canteenacard{
+    width: 200px;
+    height: 300px;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #F2F1F1;
+    color: #707070;
+    margin-right: 50px;
+
+}
+.main-canteen-card-img{
+    width: 199px;
+    height: 250px;
+}
+.canteencard-img{
+    width: 178px;
+    height: 180px;
+}
+.canteena-card-title{
+    text-align: center;
+    font-weight: 600;
+    padding-top: 80px;
+}
+.canteen-body-body{
+    padding-top: 20px;
+    padding-left: 180px;
+}
+.Canteen-body-card-title{
+    font-size: 30px;
+}
+.menu-start{
+    display: flex;
+    flex-wrap: wrap;
+}
