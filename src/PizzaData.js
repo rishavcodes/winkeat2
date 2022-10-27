@@ -5,7 +5,7 @@ const PizzaData = [
         title: "Chicken Pizza",
         price: 150,
         description: "Delightful combination of onion, capsicum, tomato & grilled mushroom",
-        amount: 1
+        quantity: 1
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const PizzaData = [
         title: "Paneer Pizza",
         price: 140,
         description: "Delightful combination of onion, capsicum, tomato & grilled mushroom",
-        amount: 1
+        quantity: 1
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const PizzaData = [
         title: "Capsicum Pizza",
         price: 130,
         description: "Delightful combination of onion, capsicum, tomato & grilled mushroom",
-        amount: 1
+        quantity: 1
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const PizzaData = [
         title: "Onion Pizza",
         price: 120,
         description: "Delightful combination of onion, capsicum, tomato & grilled mushroom",
-        amount: 1
+        quantity: 1
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const PizzaData = [
         title: "Corn Pizza",
         price: 120,
         description: "Delightful combination of onion, capsicum, tomato & grilled mushroom",
-        amount: 1
+        quantity: 1
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ const PizzaData = [
         title: "Margreeta Pizza",
         price: 150,
         description: "Delightful combination of onion, capsicum, tomato & grilled mushroom",
-        amount: 1
+        quantity: 1
     },
 ]
 

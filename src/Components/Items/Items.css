@@ -12,6 +12,12 @@
     width: 800px;
     height: 100px;
 }
+.cart-img-img{
+    width: 100px;
+    height: 98px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 .cart-tiem-info{
     padding-left: 10px;
     padding-top: 10px;

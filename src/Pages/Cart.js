@@ -1,4 +1,4 @@
-import React, { createContext, useReducer} from "react";
+import React, { createContext, useReducer, useEffect} from "react";
 import "../styles/Cart.css";
 import ContextCart from "../Components/ContextCart";
 import PizzaData from "../PizzaData";
@@ -22,11 +22,34 @@ const Cart = () => {
       type: "REMOVE_ITEM",
       payload: id,
     });
-
   };
 
+  // increment of item
+  const increment = (id) => {
+    return dispatch({
+      type: "INCREMENT",
+      payload: id,
+    });
+  };
+
+
+  const decrement = (id) => {
+    return dispatch({
+      type: "DECREMENT",
+      payload: id,
+    });
+  };
+
+  // to render updated item in cart
+  useEffect(() => {
+    dispatch({type: "GET_TOTAL"});
+    // console.log("hello");
+  }, [state.item]);
+ 
+  
+
   return (
-      <CartContext.Provider value={{...state, removeItem}}>
+      <CartContext.Provider value={{...state, removeItem, increment, decrement}}>
         <ContextCart />
       </CartContext.Provider>
   );

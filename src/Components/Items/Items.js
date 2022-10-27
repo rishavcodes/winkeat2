@@ -7,28 +7,13 @@ import { CartContext } from "../../Pages/Cart"
 
 
 
-const Items = ({id, img, title, price, description, amount}) => {
+const Items = ({id, img, title, price, description, quantity}) => {
 
-  const [count, setCount] = useState(0); // useState returns a pair. 'count' is the current state. 'setCount' is a function we can use to update the state.
+  // useState returns a pair. 'count' is the current state. 'setCount' is a function we can use to update the state.
+  // const [count, setCount] = useState(0);
 
-  const removeItem = useContext(CartContext);
+  const {removeItem, increment, decrement} = useContext(CartContext);
 
-  function increment() {
-    //setCount(prevCount => prevCount+=1);
-    setCount(function (prevCount) {
-      return (prevCount += 1);
-    });
-  }
-
-  function decrement() {
-    setCount(function (prevCount) {
-      if (prevCount > 0) {
-        return (prevCount -= 1);
-      } else {
-        return (prevCount = 0);
-      }
-    });
-  }
 
   return (
   <>
@@ -36,7 +21,6 @@ const Items = ({id, img, title, price, description, amount}) => {
       <div className="cart-card-body">
         <div className="cart-img">
           <img
-          style={{width: "100px"}}
             className="cart-img-img"
             src={img}
             alt="not available"
@@ -47,11 +31,11 @@ const Items = ({id, img, title, price, description, amount}) => {
           <p>{description}</p>
         </div>
         <div className="cart-increase-decrease">
-          <button onClick={decrement}>
-            <RemoveIcon />
+          <button onClick={() => decrement(id)}>
+            <RemoveIcon/>
           </button>
-          <h2>{count}</h2>
-          <button onClick={increment}>
+          <h2>{quantity}</h2>
+          <button onClick={() => increment(id)}>
             <AddIcon />
           </button>
         </div>
