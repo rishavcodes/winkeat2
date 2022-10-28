@@ -1,11 +1,15 @@
 .maincanteen-container{
     width: 100vw;
+    height: 100vh;
 }
 .maincanteen-navbar{
     width: 1300px;
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 .arrowback-maincanteen{
     padding-top: 20px;
@@ -36,11 +40,11 @@
 
 }
 .main-canteen-card-img{
-    width: 199px;
+    width: inherit;
     height: 250px;
 }
 .canteencard-img{
-    width: 178px;
+    width: inherit;
     height: 180px;
 }
 .canteena-card-title{
@@ -58,4 +62,9 @@
 .menu-start{
     display: flex;
     flex-wrap: wrap;
+    
 }
+.meny-start::-webkit-scrollbar{
+    height: 12px;
+    width: 12px;
+    }

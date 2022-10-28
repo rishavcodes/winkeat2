@@ -1,12 +1,17 @@
 import React from "react";
 import "../../src/styles/Maincanteen.css";
-// import { Link } from "react-router-dom";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import SearchBar from "../Components/SearchBar/SearchBar";
 import PizzaMenu from "../Components/PizzaMenu/PizzaMenu";
 import PizzaData from "../PizzaData";
+import { Scrollbars } from "react-custom-scrollbars";
+import { CartState } from "../Components/Context";
 
 const MainCanteen = (props) => {
+
+  const {state} = CartState();
+
+  
   return (
     <>
       <div className="maincanteen-container">
@@ -25,6 +30,7 @@ const MainCanteen = (props) => {
           </div>
         </div>
         <div className="canteena-body">
+        
           <div className="canteen-body-header">
             <div className="canteenacard">
               <div className="canteencard-img">
@@ -89,6 +95,7 @@ const MainCanteen = (props) => {
           </div>
           <div className="canteen-body-body">
             <h2 className="Canteen-body-card-title">Pizza</h2>
+            <Scrollbars  style={{ width: 1300, height: 300 }}>
             <div className="menu-start">
             {PizzaData.map((item, index) => {
               return (
@@ -103,6 +110,7 @@ const MainCanteen = (props) => {
               );
             })}
             </div>
+            </Scrollbars>
           </div>
         </div>
       </div>

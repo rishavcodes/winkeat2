@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Pizzamenu.css"
 
-const PizzaMenu = (props) => {
+const PizzaMenu = (props, item, addToCart) => {
   return (
     <>
         <div>
