@@ -5,13 +5,15 @@ import SearchBar from "../Components/SearchBar/SearchBar";
 import PizzaMenu from "../Components/PizzaMenu/PizzaMenu";
 import PizzaData from "../PizzaData";
 import { Scrollbars } from "react-custom-scrollbars";
-import { CartState } from "../Components/Context";
+import MainCanteenBodyHeader from "../Components/MainCanteenBodyHeader/MainCanteenBodyHeader";
+// import { CartState } from "../Components/Context";
+import CanteenHeaderListData from "../CanteenHeaderListData";
+import HorizontalScroll from "react-horizontal-scrolling";
+
 
 const MainCanteen = (props) => {
+  // const {state} = CartState();
 
-  const {state} = CartState();
-
-  
   return (
     <>
       <div className="maincanteen-container">
@@ -30,86 +32,37 @@ const MainCanteen = (props) => {
           </div>
         </div>
         <div className="canteena-body">
-        
-          <div className="canteen-body-header">
-            <div className="canteenacard">
-              <div className="canteencard-img">
-                <img
-                  className="main-canteen-card-img"
-                  src="/images/pizza.png"
-                  alt="not available"
-                />
-              </div>
-              <div className="canteena-card-title">
-                <h2>Pizza</h2>
-              </div>
-            </div>
-            <div className="canteenacard">
-              <div className="canteencard-img">
-                <img
-                  className="main-canteen-card-img"
-                  src="/images/burger.png"
-                  alt="not available"
-                />
-              </div>
-              <div className="canteena-card-title">
-                <h2>Burger</h2>
-              </div>
-            </div>
-            <div className="canteenacard">
-              <div className="canteencard-img">
-                <img
-                  className="main-canteen-card-img"
-                  src="/images/ice-cream.png"
-                  alt="not available"
-                />
-              </div>
-              <div className="canteena-card-title">
-                <h2>Ice Cream</h2>
-              </div>
-            </div>
-            <div className="canteenacard">
-              <div className="canteencard-img">
-                <img
-                  className="main-canteen-card-img"
-                  src="/images/pasta.png"
-                  alt="not available"
-                />
-              </div>
-              <div className="canteena-card-title">
-                <h2>Pasta</h2>
-              </div>
-            </div>
-            <div className="canteenacard">
-              <div className="canteencard-img">
-                <img
-                  className="main-canteen-card-img"
-                  src="/images/biryani.png"
-                  alt="not available"
-                />
-              </div>
-              <div className="canteena-card-title">
-                <h2>Biryani</h2>
-              </div>
-            </div>
-          </div>
-          <div className="canteen-body-body">
-            <h2 className="Canteen-body-card-title">Pizza</h2>
-            <Scrollbars  style={{ width: 1300, height: 300 }}>
-            <div className="menu-start">
-            {PizzaData.map((item, index) => {
+          <HorizontalScroll>
+          <div className="canteen-list-maincanteen">
+            {CanteenHeaderListData.map((item) => {
               return (
-                <PizzaMenu
+                <MainCanteenBodyHeader
                   key={item.id}
                   img={item.img}
                   title={item.title}
-                  price={item.price}
-                  description={item.description}
-                  item={item}
                 />
               );
             })}
-            </div>
+          </div>
+          </HorizontalScroll>
+
+          <div className="canteen-body-body">
+            <Scrollbars style={{ width: 1300, height: 300 }}>
+              <h2 className="Canteen-body-card-title">Pizza</h2>
+              <div className="menu-start">
+                {PizzaData.map((item, index) => {
+                  return (
+                    <PizzaMenu
+                      key={item.id}
+                      img={item.img}
+                      title={item.title}
+                      price={item.price}
+                      description={item.description}
+                      item={item}
+                    />
+                  );
+                })}
+              </div>
             </Scrollbars>
           </div>
         </div>

@@ -24,37 +24,16 @@
     color: #707070;
     font-family: 'Poppins';
 }
-.canteen-body-header{
-    padding-top: 60px;
-    padding-left: 180px;
+.canteen-list-maincanteen{
     display: flex;
 }
-.canteenacard{
-    width: 200px;
-    height: 300px;
-    border: 1px solid;
-    border-radius: 20px;
-    background-color: #F2F1F1;
-    color: #707070;
-    margin-right: 50px;
-
-}
-.main-canteen-card-img{
-    width: inherit;
-    height: 250px;
-}
-.canteencard-img{
-    width: inherit;
-    height: 180px;
-}
-.canteena-card-title{
-    text-align: center;
-    font-weight: 600;
-    padding-top: 80px;
+.canteena-body{
+    padding-left: 200px;
+    padding-right: 100px;
 }
 .canteen-body-body{
     padding-top: 20px;
-    padding-left: 180px;
+    /* padding-left: 180px; */
 }
 .Canteen-body-card-title{
     font-size: 30px;
