@@ -36,7 +36,7 @@
     padding-top: 3px;
     font-size: 12px;
 }
-.food-info button{
+/* .food-info button{
     margin-left: 60px;
     width: 240px;
     height: 35px;
@@ -47,13 +47,94 @@
     font-size: 15px;
     cursor: pointer;
 }
-.food-info button:hover{
+
+*/
+ 
+
+
+
+
+
+
+
+
+/* counter button css start */
+
+
+#negative,#positive{
+    background: #FFB800;
+    color: white;
+    width: 50px;
+    height: 30px;
+    font-size: 25px;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    
+}
+#negative{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.blank{
+    display:none;
+}
+.block2{
+    width: 240px;
+    background: #FFB800;
+    color: white;
+    border: 1px solid whitesmoke;
+    /* padding: 9px ; */
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+.block2:hover{
     background: white;
     color: #FFB800;
     border-radius: 20px;
     border: .2px solid;
     border-color: black;
-    font-size: 18px;
+    font-size: 23px;
     cursor: pointer;
-    transition: 5ms ease-out;
+    transition: .2s ease-in-out;
+}
+#positive{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.block{
+    background-color: white;
+    border: 1px solid black;
+    color:black;
+    padding: 9px ;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    /* border-radius: 10px; */
+}
+.counter{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin: 30px; */
+}
+.number{
+    font-size: 20px;
+    position: absolute;
+    top: 62%;
+}
+.number2{
+    display: none;
+}
+.cart{
+    display: none;
+}
+.cart2{
+    display: inline;
 }
