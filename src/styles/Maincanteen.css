@@ -1,5 +1,5 @@
 .maincanteen-container{
-    width: 100vw;
+    width: 95vw;
     height: 100vh;
 }
 .maincanteen-navbar{
@@ -46,4 +46,31 @@
 .meny-start::-webkit-scrollbar{
     height: 12px;
     width: 12px;
-    }
+}
+
+
+/* add to cart line start */
+
+.addToCartLine{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 0 20px;
+    background: #FFCF52;
+    height: 60px;
+    width: 80%;
+    border-radius: 10px;
+    z-index: 10;
+    position: fixed;
+    bottom: 10px;
+    
+}
+.navigate-next-icon{
+    position: relative;
+    top: 5px;
+}
+.next-and-icon-maincanteen{
+    cursor: pointer;
+}
+.next-and-icon-maincanteen-h3{
+    color: black;
+}

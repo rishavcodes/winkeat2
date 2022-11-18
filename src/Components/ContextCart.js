@@ -6,6 +6,7 @@ import Dropdown from "react-dropdown";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { CartContext } from "../Pages/Cart";
+import { Link } from "react-router-dom";
 
 const ContextCart = () => {
 
@@ -19,7 +20,9 @@ const ContextCart = () => {
         <div className="cart-left">
           <div className="cart-navbar">
             <div className="cart-navbar-arrowicon">
+            <Link to="/mainCanteen">
               <ArrowBackIcon />
+            </Link>
             </div>
             <div className="cart-title">
               <h1>My Cart</h1>
