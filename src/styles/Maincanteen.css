@@ -62,6 +62,7 @@
     z-index: 10;
     position: fixed;
     bottom: 10px;
+    display: none;
     
 }
 .navigate-next-icon{

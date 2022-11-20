@@ -53,9 +53,11 @@ const ContextCart = () => {
               Total Amount : <br /> ₹ <span>{totalAmount}</span>
             </h3>
             <div className="proceedtopay-btn">
+            <Link to="/payment">
               <button className="proceed-to-payment-btn">
                 Proceed to Payment <ShoppingCartIcon />
               </button>
+            </Link>
             </div>
           </div>
         </div>

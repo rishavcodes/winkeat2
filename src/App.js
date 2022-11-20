@@ -10,6 +10,7 @@ import User from './Pages/User';
 import Order from './Pages/Order';
 import MainCanteen from './Pages/MainCanteen';
 import Cart from './Pages/Cart';
+import Payment from './Pages/Payment/Payment';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/order" element={<Order />} />
         <Route path="/maincanteen" element={<MainCanteen />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/payment" element={<Payment />} />
       </Routes>
     </Router>
       
