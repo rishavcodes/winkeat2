@@ -11,6 +11,10 @@ import Order from './Pages/Order';
 import MainCanteen from './Pages/MainCanteen';
 import Cart from './Pages/Cart';
 import Payment from './Pages/Payment/Payment';
+import CreditCard from './Pages/Payment/PaymentPages/Creditcard/CreditCard';
+import DebitCard from './Pages/Payment/PaymentPages/Debitcard/DebitCard';
+import UPI from './Pages/Payment/PaymentPages/UPI/UPI';
+
 
 
 function App() {
@@ -29,6 +33,9 @@ function App() {
         <Route path="/maincanteen" element={<MainCanteen />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/payment/credit-card" element={<CreditCard />} />
+        <Route path="/payment/debit-card" element={<DebitCard />} />
+        <Route path="/payment/upi" element={<UPI />} />
       </Routes>
     </Router>
       

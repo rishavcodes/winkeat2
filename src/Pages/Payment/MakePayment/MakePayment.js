@@ -6,7 +6,7 @@ const MakePayment = () => {
   return (
     <>
       <div className="make-payment-button">
-        <button>
+        <button type="submit">
           Make Payment <ShoppingCartIcon />
         </button>
       </div>
