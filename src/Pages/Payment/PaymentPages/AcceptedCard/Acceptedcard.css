@@ -1,0 +1,11 @@
+.accepted-cards{
+    margin-top: 20px;
+}
+.accepted-cards-img{
+    display: flex;
+    padding-left: 20px;
+}
+.we-accept{
+    position: absolute;
+    top: 5%;
+}

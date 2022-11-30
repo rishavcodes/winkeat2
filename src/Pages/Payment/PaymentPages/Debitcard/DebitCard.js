@@ -5,6 +5,7 @@ import MakePayment from '../../MakePayment/MakePayment'
 import ToPay from '../../Amountbox/ToPay'
 import CardForm from '../Cardform/CardForm'
 import "../Debitcard/Debitcard.css"
+import { AcceptedCard } from '../AcceptedCard/AcceptedCard'
 
 const DebitCard = () => {
   return (
@@ -16,6 +17,7 @@ const DebitCard = () => {
           <div className="payment-body-content">
             {/* <Wallet/> */}
             <div className="debitcard-card">
+            <AcceptedCard/>
             <CardForm/>
             <MakePayment/>
             </div>
