@@ -1,5 +1,5 @@
 .confirmation-page-main-content{
-    margin-left: 150px;
+    margin-left: 100px;
     margin-top: 30px;
 }
 .qr-instruction-box{
@@ -10,12 +10,66 @@
     border-radius: 10px;
     margin-right: 100px;
     text-align: center;
+    width: 450px;
+}
+.qr-code-img{
+    width: 350px;
 }
 .qr-amount-seperator-hr{
     margin-left: 60px;
     margin-right: 60px;
 }
 .amount-details{
-    padding: 10px;
+    margin: 40px 70px;
+    padding: 20px 0;
     font-size: 20px;
+    border-radius: 25px;
+    background-color: #FFCF52;
+}
+.paid-title{
+    font-size: 35px;
+    font-weight: 400;
+}
+.confirm-amount-paid{
+    font-size: 35px;
+    font-weight: 450;
+}
+
+.instruction-box{
+    margin-top: 10px;
+    display: flex;
+    background-color: #FFCF52;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 500px;
+    position: absolute;
+    right: 0;
+    width: 900px;
+}
+.instruction-img{
+    width: 350px;
+}
+.instruction-box-text{
+    margin-top: 50px;
+    width: 400px;
+}
+.instruction-heading-text{
+    font-size: 40px;
+}
+.instruction-para-text1, .instruction-para-text2{
+    font-size: 30px;
+    padding-top: 10px;
+}
+.back-to-home{
+    position: absolute;
+    left: 40%;
+}
+.return-to-home-page{
+    background-color: #E9E6DF;
+    height: 70px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 600;
 }

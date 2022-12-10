@@ -17,10 +17,14 @@ const ConfirmationPage2 = () => {
                 <hr className="qr-amount-seperator-hr" />
                 <div className="amount-details">
                   <h3 className="paid-title">Paid</h3>
-                  <h2 className="confirm-amount-paid">₹ 1150</h2>
+                  <h2 className="confirm-amount-paid">₹ 1150.00</h2>
                 </div>
               </div>
               <div className="instruction-box">
+              <div className="instruction-box-img">
+                <img className='instruction-img' src="/images/instruction-box-img.png" alt='not available'/>
+              </div>
+              <div className="instruction-box-text">
                 <h2 className="instruction-heading-text">instructions:-</h2>
                 <p className="instruction-para-text1">
                   
@@ -30,10 +34,11 @@ const ConfirmationPage2 = () => {
                 <p className="instruction-para-text2">
                   2. Do not Share this QR with anyone other than canteen staff.
                 </p>
+                </div>
               </div>
             </div>
             <div className="back-to-home">
-              <button>Return to HomePage</button>
+              <button className='return-to-home-page'>Return to HomePage</button>
             </div>
           </div>
     </>
