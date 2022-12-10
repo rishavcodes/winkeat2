@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/Confirmationpage2.css"
+import { Link } from 'react-router-dom'
 
 const ConfirmationPage2 = () => {
   return (
@@ -38,7 +39,9 @@ const ConfirmationPage2 = () => {
               </div>
             </div>
             <div className="back-to-home">
+            <Link to="/home">
               <button className='return-to-home-page'>Return to HomePage</button>
+            </Link>
             </div>
           </div>
     </>
