@@ -14,6 +14,8 @@ import Payment from './Pages/Payment/Payment';
 import CreditCard from './Pages/Payment/PaymentPages/Creditcard/CreditCard';
 import DebitCard from './Pages/Payment/PaymentPages/Debitcard/DebitCard';
 import UPI from './Pages/Payment/PaymentPages/UPI/UPI';
+import ConfirmationPage from './Pages/ConfirmationPage';
+import ConfirmationPage2 from './Pages/ConfirmationPage2';
 
 
 
@@ -36,6 +38,8 @@ function App() {
         <Route path="/payment/credit-card" element={<CreditCard />} />
         <Route path="/payment/debit-card" element={<DebitCard />} />
         <Route path="/payment/upi" element={<UPI />} />
+        <Route path="/confirmationpage" element={<ConfirmationPage />} />
+        <Route path="/confirmationpage2" element={<ConfirmationPage2 />} />
       </Routes>
     </Router>
       

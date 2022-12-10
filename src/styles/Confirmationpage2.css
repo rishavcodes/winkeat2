@@ -1,0 +1,21 @@
+.confirmation-page-main-content{
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.qr-instruction-box{
+    display: flex;
+}
+.qr-box{
+    border: 1px solid;
+    border-radius: 10px;
+    margin-right: 100px;
+    text-align: center;
+}
+.qr-amount-seperator-hr{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.amount-details{
+    padding: 10px;
+    font-size: 20px;
+}
